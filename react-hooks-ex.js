@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Puppy() {
-  const [name, setName] = useState('Doggo')
+  const [age, setAge] = useState(1)
 
   return (
     <div>
-      <h1>The puppy's name is {name}</h1>
+      <button onClick={() => setAge(age + 1)}>
+        Make the Puppy Older
+      </button>
     </div>
   )
 }
